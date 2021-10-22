@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+header {
+    background: black;
+    max-width: 100%;
+}
+
+body {
+    font-family: fantasy;
+    background-image: url("image.jpg");
+    height: 100%;
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 50px;
+    flex: content;
+    color: rgb(35, 160, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    text-decoration: none;
+    padding: 20px 50px;
+    font-size: 1.25rem;
+    position: relative;
+}
+
+.btn {
+    background: rgb(35, 160, 31);
+    color: snow;
+    border-radius: 30px;
+    padding: 20px 50px;
+    font-size: 20px;
+}
