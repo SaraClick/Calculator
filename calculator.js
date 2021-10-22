@@ -40,7 +40,7 @@ function calculator() {
     var calculation = prompt(`Fab! You entered the numbers ${num1} and ${num2}. What do you want to calculate? Enter: + , - , / , * , power or square.`);
     if (calculation == "+") {
         alert(`The result of the sum of ${num1} and ${num2} is ${sum(num1, num2)}`)
-    } else if (calculation == "substract") {
+    } else if (calculation == "-") {
         alert(`The result of the substraction of ${num1} and ${num2} is ${substract(num1, num2)}`)
     } else if (calculation == "/") {
         alert(`The result of dividing ${num1} by ${num2} is ${divide(num1, num2)}`)
