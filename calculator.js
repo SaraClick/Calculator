@@ -35,8 +35,10 @@ function square(num1, num2) {
 
 //Initial message to prompt when user clicks the button
 function calculator() {
-    var num1 = prompt("Enter your first number: ");
-    var num2 = prompt("Enter your second number: ");
+    var x = prompt("Enter your first number: ");
+    var y = prompt("Enter your second number: ");
+    var num1 = parseInt(x);
+    var num2 = parseInt(y);
     var calculation = prompt(`Fab! You entered the numbers ${num1} and ${num2}. What do you want to calculate? Enter: + , - , / , * , power or square.`);
     if (calculation == "+") {
         alert(`The result of the sum of ${num1} and ${num2} is ${sum(num1, num2)}`)
@@ -50,5 +52,7 @@ function calculator() {
         alert(`The result of ${num1} powered to ${num2} is ${power(num1, num2)}`)
     } else if (calculation.toLowerCase() == "square") {
         alert(`The square of ${num1} is ${square(num1, num2)[0]} and the square of ${num2} is ${square(num1, num2)[1]}`)
+    } else {
+        alert(`Huston, Huston, we've got a problem! I do not recognise what your input. Click the button again and make sure to follow the instructions :)`);
     }
 }
